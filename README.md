@@ -13,6 +13,7 @@
 - go-socket.io (WebSocket)
 - go-ethereum (Dapps, ethereum, web3)
 - mysql (Database)
+- gorm (Object–relational mapping)
 
 
 ## 👑 Contributing
