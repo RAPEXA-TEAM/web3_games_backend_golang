@@ -1,19 +1,21 @@
 package test
 
+//deploy contract to use
 import (
 	"context"
 	"crypto/ecdsa"
 	"fmt"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethclient"
 	"log"
 	"math/big"
 	"time"
 	"web3game/contracts"
+
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/ethereum/go-ethereum/ethclient"
 )
 
-var EthClient, err = ethclient.Dial("http://localhost:8545")
+var EthClient, err = ethclient.Dial("http://127.0.0.1:8545")
 
 func DeployContract(privateKeyParam string) *contracts.GamePool {
 	//client, err := ethclient.Dial("/home/user/.ethereum/geth.ipc")
