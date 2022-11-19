@@ -38,7 +38,7 @@ func AddBlockChainListeners() {
 	//start ganache
 	//deploy contract to `development` network with truffle
 	//copy the port and contract address and put the values
-	//client, err := ethclient.Dial("ws://localhost:8545")
+	//client, err := ethclient.Dial("centrifugo://localhost:8545")
 	client, err := ethclient.Dial("wss://rpc-mumbai.matic.today")
 	if err != nil {
 		log.Fatal(err)

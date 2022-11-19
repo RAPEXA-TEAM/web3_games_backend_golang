@@ -1,0 +1,39 @@
+{
+  "token_hmac_secret_key": "2af64a5a-0269-4888-8c66-6b093f7a7f34",
+  "admin_password": "6ea0a50b-dd13-4f2a-93f5-0e25fb6ae8b5",
+  "admin_secret": "610079e3-96f5-446f-bb0b-bce81484a6d9",
+  "api_key": "1396458f-8cea-4e1c-bedf-f461737fb72a",
+  "debug": true,
+  "health": true,
+  "client_insecure":  true,
+  "admin":  true,
+  "port": 8882,
+  "allowed_origins": ["*"],
+  "engine": "redis",
+  "redis_address": "127.0.0.1:6379",
+  "allow_subscribe_for_client": true,
+  "allow_subscribe_for_anonymous": true,
+  "allow_publish_for_subscriber": true,
+  "allow_publish_for_anonymous": true,
+  "allow_history_for_subscriber": true,
+  "allow_history_for_anonymous": true,
+  "allow_presence_for_subscriber": true,
+  "allow_presence_for_anonymous": true,
+  "namespaces": [
+    {
+      "name": "rockPaper",
+      "presence": true,
+      "history_ttl": "86400s",
+      "history_size": 1024,
+      "force_recovery": true,
+      "allow_subscribe_for_client": true,
+      "allow_subscribe_for_anonymous": true,
+      "allow_publish_for_subscriber": true,
+      "allow_publish_for_anonymous": true,
+      "allow_history_for_subscriber": true,
+      "allow_history_for_anonymous": true,
+      "allow_presence_for_subscriber": true,
+      "allow_presence_for_anonymous": true
+    }
+  ]
+}
